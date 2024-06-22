@@ -1,0 +1,29 @@
+  {
+    "__single": true,
+    "productos": [
+      {
+        "id": "f207",
+        "nombre": "memorias udb",
+        "precio": "1500",
+        "imagen": "https://muchosnegociosrentables.com/wp-content/uploads/2018/05/Memorias-USB-con-motivo-geek.jpg"
+      },
+      {
+        "id": "8f66",
+        "nombre": "comics",
+        "precio": "1500",
+        "imagen": "https://muchosnegociosrentables.com/wp-content/uploads/2018/05/C%C3%B3mics.jpg"
+      },
+      {
+        "id": "ffdc",
+        "nombre": "funkopop",
+        "precio": "2000",
+        "imagen": "https://muchosnegociosrentables.com/wp-content/uploads/2018/05/Figuras-Pop-De-Funko-para-nerds-y-geeks.jpg"
+      },
+      {
+        "id": "af9e",
+        "nombre": "remeras",
+        "precio": "6000",
+        "imagen": "https://muchosnegociosrentables.com/wp-content/uploads/2018/05/camisetas-personalizadas-para-geeks.jpg"
+      }
+    ]
+  }

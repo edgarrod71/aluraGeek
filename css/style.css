@@ -1,0 +1,428 @@
+body {
+    background-image: url(/img/estrellas.png);
+    font-family: "IBM Plex Mono";
+    box-sizing: border-box;
+}
+
+#titulo {
+    background-color: #a7c;
+    display: flex;
+    width: 100vw;
+    height: 9vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Press Start 2P";
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    height: 69vh;
+}
+
+#bktron {
+    outline: 1px red solid;
+    position: absolute;
+    width: 100%;
+    height: 62vh;
+    background-image: url("../img/bktron2.png");
+    opacity: 0.8;
+    z-index: 1;
+}
+
+#big_container {
+    z-index: 2;
+    display: flex;
+    height: 100vh;
+}
+
+.productos_contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 10PX;
+    width: 50vw;
+    height: 50vh;
+}
+
+.productos_titulo {
+    align-self: center;
+    padding: 10px 0;
+    font-family: "Press Start 2P";
+    font-size: 15px;
+    color: white;
+}
+
+.productos_cards {
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 15px;
+    gap: 15px;
+}
+
+.productos_cards::-webkit-scrollbar {
+    background: #00000000;
+}
+
+.productos_cards::-webkit-scrollbar-thumb {
+    background: #0a095a67;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    border-color: #d11;
+    border-style: solid;
+    width: 196px;
+    height: 258px;
+    border: 4px;
+    border-radius: 15px;
+    gap: 4px;
+    box-shadow: -8px 10px 5px 0px rgba(0, 0, 0, 0.4)
+}
+
+.card img {
+    width: 85%;
+    padding: 4px 2px;
+}
+
+.card-container--info {
+    width: 90%;
+}
+
+.card-container--value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-container--value img {
+    width: 1.5em;
+}
+
+.boton_borrar{
+    height: 40px;
+    box-shadow: 3px 4px 0px 1px #ed3;
+    background: linear-gradient(to bottom, #fea 5%, #fea 100%);
+    background-color: #fff;
+    border-radius: 25%;
+    border: 4px solid #ffe;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 5px;
+}
+
+.boton_borrar:hover{
+    background: linear-gradient(to bottom, #dd9 5%, #fea 100%);
+}
+
+.boton_borrar:active{
+    box-shadow: inset 3px 4px 0px 1px #ed3a;
+}
+
+.productos_mensaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.productos_mensaje h1 {
+    width: 50%;
+    font-family: "Press Start 2P";
+    color: rgb(11, 243, 100);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formproductos_contenedor {
+    overflow: -moz-hidden-unscrollable;
+    display: flex;
+    flex-direction: column;
+    padding: 10PX 0;
+    width: 30vw;
+    height: 50vh;
+}
+
+.formproductos_titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 40px 0;
+    font-family: "Press Start 2P";
+    font-size: 15px;
+    color: white;
+    gap: 20px;
+}
+
+.formproductos_form {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.formproductos_input {
+    width: -webkit-fill-available;
+    height: 2.5rem;
+    border-radius: 1em;
+    padding: 4px 0 0 8px;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 70%;
+    margin: 0 2em 0;
+}
+
+.error {
+    color: #a16;
+    font-size: 80%;
+    padding: 0;
+    font-weight: bold;
+}
+
+.formproductos_botones {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 40px;
+}
+
+.formcontacto_boton_enviar {
+    height: 80px;
+    box-shadow: 3px 4px 0px 1px #372;
+    background: linear-gradient(to bottom, #7b5 5%, #7b5 100%);
+    background-color: #7a1;
+    border: 4px solid #482;
+    border-radius: 42px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-shadow: 3px 1px 0px #583;
+    text-decoration: none;
+}
+
+.formcontacto_boton_enviar:hover {
+    background: linear-gradient(to bottom, #694 5%, #7b5 100%);
+    background-color: #7b5;
+}
+
+.formcontacto_boton_enviar:active {
+    box-shadow: inset 3px 4px 0px 1px #372;
+}
+
+.formcontacto_boton_limpiar {
+    box-shadow: 3px 4px 0px 1px #8a2a21;
+    background: linear-gradient(to bottom, #c21 5%, #f43 100%);
+    background-color: #c62d1f;
+    border-radius: 48px;
+    border: 4px solid #d21;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-shadow: 3px 1px 0px #ccc;
+}
+
+.formcontacto_boton_limpiar:hover {
+    background: linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
+    background-color: #e65;
+}
+
+.formcontacto_boton_limpiar:active {
+    box-shadow: inset 3px 4px 0px 1px #833;
+}
+
+footer {
+    display: flex;
+    background-image: linear-gradient(#11b, #005);
+    width: 100vw;
+    height: 12vh;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.logo_alurageek {
+    display: flex;
+    align-items: center;
+}
+
+.alurageek_img {
+    width: 5rem;
+}
+
+.alurageek_texto {
+    font-family: "Press Start 2P";
+    font-weight: bold;
+    font-size: 15px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (min-width: 1440px) {
+    main {
+        height: 70vh;
+    }
+
+    #big_container {
+        width: 80vw;
+    }
+
+    footer {
+        height: 19vh;
+    }
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    #titulo {
+        font-size: 14px;
+    }
+
+    main {
+        height: 65vh;
+    }
+
+    .productos_contenedor {
+        width: 60vw;
+    }
+
+    .formproductos_titulo {
+        flex-direction: column;
+    }
+
+    .formproductos_input {
+        margin: 0 10px 0;
+    }
+
+    .formproductos_botones {
+        gap: 25px;
+    }
+
+    .formcontacto_boton_enviar,
+    .formcontacto_boton_limpiar {
+        transform: scale(0.9);
+    }
+
+    footer {
+        height: 15vh;
+    }
+}
+
+
+/* Celulares */
+@media (max-width: 425px) {
+    #titulo {
+        height: 4vh;
+    }
+
+    #titulo img {
+        width: 5rem;
+    }
+
+    main {
+        height: 86vh;
+    }
+
+    .bkg {
+        height: 81vh;
+    }
+
+    #bktron {
+        top: 81vh;
+    }
+
+    #big_container {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .productos_contenedor {
+        width: 95vw;
+        height: 45vh;
+        padding: 0;
+    }
+
+    .productos_titulo {
+        font-size: 13px;
+    }
+
+    .formproductos_contenedor {
+        width: 95vw;
+        height: auto;
+        align-items: center;
+    }
+
+    .formproductos_titulo {
+        font-size: 13px;
+        flex-direction: row;
+        padding: 0 0 5px 0;
+    }
+
+    .formproductos_formulario {
+        padding: 10px 0;
+    }
+
+    .formproductos_form {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .formproductos_input {
+        height: 1.8rem;
+    }
+
+    .error {
+        font-size: 80%;
+    }
+
+    .formproductos_botones {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    footer {
+        padding: 0 0 5px 0;
+        height: 15vh;
+        gap: 4px;
+    }
+
+    .alurageek_img {
+        width: 3.5rem;
+    }
+
+    .alurageek_texto {
+        font-size: 10px;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+}
